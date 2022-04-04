@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Tower Of Hanoi!</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename= 'images/favicon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <script>
+/*                 const xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        moves.innerHTML = xhr.responseText;
+                        localStorage.setItem('data', xhr.responseText)
+                    }
+                };
+                xhr.open("POST", "/slider_update", true);
+                xhr.send();   */          
+                </script>
+            <p class="moves explanation">
+                {{moves}}
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap');
+
+.App {
+    background-color: aliceblue;
+    font-family: 'BIZ UDPMincho', serif;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+ 
+h1 {
+    margin: auto;
+}
+
+.explanation {
+    line-height: 20px;
+}
+
+.moves {
+    background-color: aliceblue;
+    /* box-sizing: border-box; */
+    overflow: scroll;
+    position: absolute;
+    right: 0; left: 0; bottom: auto;
+}
+
+.solve {
+    font-family: 'BIZ UDPMincho', serif;
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 25px;
+    background-color: #fff7f0;
+    border: dashed 2px black;
+}
