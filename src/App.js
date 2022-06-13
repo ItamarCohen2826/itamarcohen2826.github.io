@@ -3,7 +3,7 @@ import NavigationBar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Routes is equal to switch
 import About from './components/about';
 import Contact from './components/contact';
-import Home from './components/home';
+import Home from './components/Home';
 import { useMediaQuery } from 'react-responsive';
 
 function App() {
@@ -27,8 +27,10 @@ function App() {
     query: "(min-device-width: 1201px )",
   });
 
-  let fontSize = 100;
-  isDesktop || isBigScreen || isLaptop || isTabletDevice ? fontSize = 100 : fontSize = 25;
+  let titleFontSize = 100;
+  let subtitleFontSize = 50;
+  isDesktop || isBigScreen || isLaptop || isTabletDevice ? titleFontSize = 100 : titleFontSize = 50;
+  isDesktop || isBigScreen || isLaptop || isTabletDevice ? subtitleFontSize = 50 : subtitleFontSize = 25;
 
   return (
     <div className="wrapper">
@@ -37,7 +39,7 @@ function App() {
         <br />
         <br />
         <Routes>
-          <Route path='/' element={<Home fontSize={fontSize} />} />
+          <Route path='/' element={<Home titleFontSize={titleFontSize} />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
