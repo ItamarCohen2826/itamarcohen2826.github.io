@@ -5,10 +5,12 @@ import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveI
 const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 const FadeUp = batch(Fade(), Move(), Sticky());
 
-const Home = () => {
+const Home = (props) => {
     return (
         <>
-        <h1 className='title'>L.O.M - Life On Mars</h1>
+        <h1 className='title' style={{
+          fontSize: props.fontSize
+        }}>L.O.M - Life On Mars</h1>
       <ScrollContainer>
         <ScrollPage page={0}>
           <Animator animation={FadeUp}>
@@ -18,26 +20,29 @@ const Home = () => {
         </ScrollPage>
         <ScrollPage page={1}>
           <Animator animation={FadeIn}>
-            <span style={{ fontSize: '50px' }}>Who are we?</span>
+            <span style={{ fontSize: '50px' }}>About our project</span>
             <br />
-            <span style={{ fontSize: '25px' }}>We are Yishay Space Team, we created a project called Life On Mars</span>
+            <span style={{ fontSize: '25px' }}>
+              The L.O.M project is an integrated facility that 
+              <br />
+              regularly provides water for domestic uses and agriculture,
+              <br />
+              air and electricity in environmentally friendly 
+              <br />
+              ways using clean and economical methods,
+            </span>
           </Animator>
         </ScrollPage>
         <ScrollPage page={2}>
           <Animator animation={FadeUp}>
-            <span style={{ fontSize: '50px' }}>Lorem Ipsum</span>
+            <span style={{ fontSize: '50px' }}>Why us?</span>
             <br />
-            <span style={{ fontSize: '25px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            <br />
-            Donec aliquam eget erat sed auctor. Fusce placerat efficitur ante at ultrices. 
-            <br />
-            Mauris dolor urna, finibus non consectetur a, imperdiet ac quam. 
-            <br />
-            Vivamus in commodo massa. Duis efficitur varius nisi, a pretium purus pellentesque et.
-            <br />
-             Aliquam aliquam tortor quis lectus suscipit, id tincidunt justo lobortis.
-            <br />
-             Morbi euismod viverra nulla ut pretium.
+            <span style={{ fontSize: '25px' }}>
+              We are the only company in the market 
+              <br />
+              that provides the three basic life needs:
+              <br />
+              Oxygen, water and electricity
              </span>
           </Animator>
         </ScrollPage>

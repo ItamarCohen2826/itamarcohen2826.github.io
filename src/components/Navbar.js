@@ -1,10 +1,11 @@
+// eslint-disable-next-line
 import { Nav, Container, NavLink } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
 
-const NabvarComp = () => {
+const NavigationBar = () => {
     return (
         <Navbar bg="light" variant="light" expand='sm' collapseOnSelect fixed='top'  className='justify-content-center data-bs-toggle' >
             <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />
@@ -19,4 +20,4 @@ const NabvarComp = () => {
     );
 }
 
-export default NabvarComp;
+export default NavigationBar;
