@@ -52,6 +52,7 @@ const About = (props) => {
                 <br />
                 This system will provide you with a lot of gases like oxygen, nitrogen, argon, and many more.
                 </span>
+                <br />
             </Animator>
         </ScrollPage>
       </ScrollContainer>   
